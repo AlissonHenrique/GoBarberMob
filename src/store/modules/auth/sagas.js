@@ -19,7 +19,7 @@ export function* signIn({payload}) {
     if (!user.provider) {
       Alert.alert(
         'Erro no login',
-        'O usuario não pode ser prestador de serviço',
+        'O usuario não pode ser prestador de serviço'
       );
       return;
     }
@@ -43,7 +43,6 @@ export function* signUp({payload}) {
       name,
       email,
       password,
-      provider: true,
     });
 
     // history.push('/');
