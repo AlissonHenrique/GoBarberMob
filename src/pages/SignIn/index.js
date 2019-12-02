@@ -54,8 +54,7 @@ export default function SignIn({navigation}) {
             Acessar
           </SubmitButton>
         </Form>
-        {/* <SingLink onPress={() => navigation.navigate('SignUp')}> */}
-        <SingLink onPress={() => navigation.navigate('Dashboard')}>
+        <SingLink onPress={() => navigation.navigate('SignUp')}>
           <SingLinkText>Criar conta gratuita</SingLinkText>
         </SingLink>
       </Container>
