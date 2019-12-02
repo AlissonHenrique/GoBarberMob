@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react';
-import { Image } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import React, {useRef, useState} from 'react';
+import {Image} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
 import logo from '~/assets/logo.png';
 import Background from '~/components/Background';
-import { signInRequest } from '~/store/modules/auth/actions';
+import {signInRequest} from '~/store/modules/auth/actions';
 
 import {
   Container,
@@ -14,7 +14,7 @@ import {
   SingLinkText,
 } from './styles';
 
-export default function SignIn({ navigation }) {
+export default function SignIn({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
